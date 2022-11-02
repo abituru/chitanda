@@ -24,82 +24,86 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
 	
   _*${ucapanWaktu} ${pushname !== undefined ? pushname : 'Kak'}*_
 
-    Library : *Baileys-MD*.
-    Prefix : ( ${prefix} )
-    Tanggal Server : ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}
-    Waktu Server : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}
+*BOT INFO*
 
-	Status : ${isOwner ? 'Owner' : isPremium ? 'Premium' : 'Free'}
-	Limit Harian : ${isOwner ? '-' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
-	Limit Game : ${isOwner ? '-' : cekGLimit(sender, gcount, glimit)}
-	Balance : $${toCommas(getBalance(sender, balance))}
+Library : *Baileys-MD*.
+Prefix : ( ${prefix} )
+Tanggal Server : ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}
+Waktu Server : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}
 
-  *( 📍 )  Main Menu*
-  ≻ ${prefix}menu
-  ≻ ${prefix}owner
-  ≻ ${prefix}donasi
-  ≻ ${prefix}speed
-  ≻ ${prefix}runtime
-  ≻ ${prefix}cekprem
-  ≻ ${prefix}listprem
+*USER INFO*
 
-  *( ✏️ )  Converter/Tools*
-  ≻ ${prefix}sticker
-  ≻ ${prefix}toimg
-  ≻ ${prefix}tovid
+Status : ${isOwner ? 'Owner' : isPremium ? 'Premium' : 'Free'}
+Limit Harian : ${isOwner ? '-' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
+Limit Game : ${isOwner ? '-' : cekGLimit(sender, gcount, glimit)}
+Balance : $${toCommas(getBalance(sender, balance))}
 
-  *( ⌛ )  Downloader*
-  ≻ ${prefix}play
-  ≻ ${prefix}tiktok
-  ≻ ${prefix}ytmp4
-  ≻ ${prefix}ytmp3
-  ≻ ${prefix}getvideo
-  ≻ ${prefix}getmusic
-  ≻ ${prefix}instagram
-  ≻ ${prefix}facebook
+*Main Menu*
+  • ${prefix}menu
+  • ${prefix}owner
+  • ${prefix}donasi
+  • ${prefix}speed
+  • ${prefix}runtime
+  • ${prefix}cekprem
+  • ${prefix}listprem
+
+*Converter/Tools*
+  • ${prefix}sticker
+  • ${prefix}toimg
+  • ${prefix}tovid
+
+*Downloader*
+  • ${prefix}play
+  • ${prefix}tiktok
+  • ${prefix}ytmp4
+  • ${prefix}ytmp3
+  • ${prefix}getvideo
+  • ${prefix}getmusic
+  • ${prefix}instagram
+  • ${prefix}facebook
   
-  *( ♻️ )  Random Menu*
-  ≻ ${prefix}quote
-  ≻ ${prefix}cecan
-  ≻ ${prefix}cogan
+*Random Menu*
+  • ${prefix}quote
+  • ${prefix}cecan
+  • ${prefix}cogan
   
-  *( 🔎 )  Search Menu*
-  ≻ ${prefix}lirik
-  ≻ ${prefix}grupwa
-  ≻ ${prefix}ytsearch
+*Search Menu*
+  • ${prefix}lirik
+  • ${prefix}grupwa
+  • ${prefix}ytsearch
   
-  *( 🎮 )  Game Menu*
-  ≻ ${prefix}tictactoe
-  ≻ ${prefix}delttc
-  ≻ ${prefix}tebakgambar
+*Game Menu*
+  • ${prefix}tictactoe
+  • ${prefix}delttc
+  • ${prefix}tebakgambar
   
-  *( 🏦 )  Payment & Bank*
-  ≻ ${prefix}buylimit
-  ≻ ${prefix}buyglimit
-  ≻ ${prefix}transfer
-  ≻ ${prefix}limit
-  ≻ ${prefix}balance
+*Payment & Bank*
+  • ${prefix}buylimit
+  • ${prefix}buyglimit
+  • ${prefix}transfer
+  • ${prefix}limit
+  • ${prefix}balance
   
-  *( 👥 )  Group Menu*
-  ≻ ${prefix}linkgrup
-  ≻ ${prefix}setppgrup
-  ≻ ${prefix}setnamegc
-  ≻ ${prefix}setdesc
-  ≻ ${prefix}group
-  ≻ ${prefix}revoke
-  ≻ ${prefix}hidetag
+*Group Menu*
+  • ${prefix}linkgrup
+  • ${prefix}setppgrup
+  • ${prefix}setnamegc
+  • ${prefix}setdesc
+  • ${prefix}group
+  • ${prefix}revoke
+  • ${prefix}hidetag
   
-  *( 🧑🏻‍💻 )  Owner Menu*
+*Owner Menu*
   > evalcode
   x evalcode-2
   $ executor
-  ≻ ${prefix}join
-  ≻ ${prefix}broadcast
-  ≻ ${prefix}setppbot
-  ≻ ${prefix}exif
-  ≻ ${prefix}leave
-  ≻ ${prefix}addprem
-  ≻ ${prefix}delprem
+  • ${prefix}join
+  • ${prefix}broadcast
+  • ${prefix}setppbot
+  • ${prefix}exif
+  • ${prefix}leave
+  • ${prefix}addprem
+  • ${prefix}delprem
 
 `+'     \`\`\`Powered by Nodejs\`\`\`'
 }
